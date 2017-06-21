@@ -1,0 +1,154 @@
+*{
+  box-sizing:border-box;
+}
+.container{
+  max-width:80%;
+  margin-top:100px;
+  padding:0px;
+  
+ 
+}
+#box{
+  position:relative;
+  height:305px;
+  width:305px;
+  background-color:grey;
+  border-radius:100%;
+  
+}
+.quarter{
+  border : 10px solid grey;
+  height:150px;
+  width : 150px;
+  margin:0px !important;
+}
+.quarter:hover{
+  cursor:pointer;
+}
+#green{
+ background-color:green;
+  border-top-left-radius:100%;
+  border-top:20px solid grey;
+  border-left:20px solid grey;
+  display:inline-block;
+}
+#green:hover{
+  background-color:forestgreen !important;
+}
+
+#red{
+  background-color:red;
+  display:inline-block;
+   border-top-right-radius:100%;
+    border-top:20px solid grey;
+  border-right:20px solid grey;
+}
+#red:hover{
+  background-color:salmon !important;
+}
+
+#yellow{
+  background-color:yellow;
+  display:inline-block;
+  border-bottom:20px solid grey;
+  border-left:20px solid grey;
+  border-bottom-left-radius:100%;
+}
+#yellow:hover{
+  background-color:cornsilk !important;
+}
+#blue{
+  background-color:blue;
+    border-bottom:20px solid grey;
+  border-right:20px solid grey;
+  border-bottom-right-radius:100%;
+  display:inline-block;
+ 
+}
+#blue:hover{
+  background-color:lightblue !important;
+}
+#controls{
+  position:absolute;
+  background-color:lightgrey;
+  height : 150px;
+  width:150px;
+  border-radius:100%;
+  top:75px;
+  left:75px;
+  border : 20px solid grey;
+  color:black;
+  font-weight:bold;
+}
+#start{
+  width:15px;
+  height:15px;
+  border-radius:100%;
+  background-color:red;
+  border:1px solid green;
+  position:absolute;
+  left:15px;
+}
+#start:hover{
+  cursor:pointer;
+}
+#pstart{
+  position:absolute;
+  left:10px;
+  top:67px;
+}
+#strict{
+  width:15px;
+  height:15px;
+  border-radius:100%;
+  background-color:yellow;
+  border:1px solid blue;
+  position:absolute;
+  left:68px;
+}
+#strict:hover{
+  cursor:pointer;
+}
+#couloirstrict{
+  width:33px;
+  height:15px;
+  border-radius:10px;
+  background-color:lightgrey;
+  border:1px solid blue;
+  position:absolute;
+  left:68px;
+}
+#couloirstrict:hover{
+  cursor:pointer;
+}
+#pstrict{
+  position:absolute;
+  top:67px;
+  left:68px;
+}
+
+#count{
+  width:50px;
+  height:20px;
+  background-color:black;
+  color:red;
+  position: absolute;
+  left : 30px;
+  top:85px;
+  border-radius: 25%;
+}
+
+@media (hover:none),(hover:coarse), (hover:on-demand) {
+    #green:hover{ 
+        background-color:green;
+    }
+  #red:hover{
+    background-color:red;
+  }
+  #yellow:hover{
+    background-color:yellow;
+  }
+  #blue:hover{
+    background-color:blue;
+  }
+}
